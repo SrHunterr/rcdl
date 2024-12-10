@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <title>Layout</title>
+</head>
+<!--Todo mundo que ver esse codigo vai rebolar slow for the crias.  -->
+<body>
+    <header>
+        <img src="/img/logo emyli.png" alt="Logo" class="logo">
+        <h1>R.C.D.L</h1>
+        <button id="openMenu" onclick="toggleMenu()">&#9776;</button>
+    </header>
+
+    <nav id="menu">
+        <button id="closeMenu" onclick="toggleMenu()">X</button>
+        <a href="/layout.html"><strong>Inicio</strong></a>
+        <a href="/Paginas/sobre.html"><strong>Sobre</strong></a>
+        <a href="/Paginas/publicar.html"><strong>Publicar</strong></a>
+        <a href="/Paginas/conatos.html">Contatos</a>
+    </nav>
+
+    <main>
+        <div class="cards">
+            <a href="/livros/harry potter/harry.html">
+                <img src="/img/pedra filosofal.png" alt="Capa do livro" id="capahenry">
+                <h3>Harry Potter: A Pedra Filosofal</h3>
+                <h4><a href="https://pt.wikipedia.org/wiki/J._K._Rowling" target="_blank">J. K. Rowling</a></h4>
+                <br>
+                <p><strong>Preço:</strong> Em média R$ 40,00</p>
+            </a>
+        </div>
+        <div class="cards">
+            <a href="/livros/harry potter/harry.html"></a>
+                <img src="/img/a-sutil-arte-de-ligar-o-fodase.png" alt="Capa do livro">
+                <h3>A Sutil Arte de Ligar o Foda-se</h3>
+                <h4><a href="https://pt.wikipedia.org/wiki/Mark_Manson" target="_blank">Mark Manson</a></h4>
+            </div>
+        </div>
+        <div class="cards">
+            <a href="/livros/harry potter/harry.html"></a>
+                <img src="/img/as-48.png" alt="Capa do livro">
+                <h3>As 48 Leis do Poder</h3>
+                <h4><a href="https://pt.wikipedia.org/wiki/Robert_Greene_(escritor_estadunidense)" target="_blank">Robert Greene</a></h4>
+            </div>
+        </div>
+        <div class="cards">
+            <a href="/livros/harry potter/harry.html"></a>
+                <img src="/img/diario banana.png" alt="Capa do livro">
+                <h3>Diário de um Banana</h3>
+                <h4><a href="https://pt.wikipedia.org/wiki/Jeff_Kinney" target="_blank">Jeff Kinney</a></h4>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © 2024 R.C.D.L - Todos os direitos reservados
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

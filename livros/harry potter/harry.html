@@ -1,0 +1,49 @@
+=<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="harry.css">
+    <title>Layout</title>
+</head>
+
+<body>
+    <header>
+        <img src="/img/logo emyli.png" alt="Logo" class="logo">
+        <h1>R.C.D.L</h1>
+        <button id="openMenu" onclick="toggleMenu()">&#9776;</button>
+    </header>
+
+    <nav id="menu">
+        <button id="closeMenu" onclick="toggleMenu()">X</button>
+        <a href="/layout.html"><strong>Inicio</strong></a>
+        <a href="/Paginas/sobre.html"><strong>Sobre</strong></a>
+        <a href="#"><strong>Publicar</strong></a>
+        <a href="#">Contatos</a>
+    </nav>
+
+    <main>
+        <div id="MAINDIV">
+            <img src="/img/pedra filosofal.png" alt="">
+        </div>
+        <div>
+            <H1>Harry Potter: A Pedra Filosofal</H1>
+            <br>
+            <p><strong>Harry Potter e a Pedra Filosofal</strong> é o primeiro livro da série escrita por J.K. Rowling. A história apresenta Harry Potter, um menino órfão que descobre, ao completar 11 anos, que é um bruxo e foi aceito na Escola de Magia e Bruxaria de Hogwarts. Lá, ele faz amigos leais, como Hermione Granger e Rony Weasley, e começa a desvendar segredos sobre o misterioso passado de sua família. Ao mesmo tempo, Harry enfrenta o retorno do temido bruxo Voldemort, que busca a lendária Pedra Filosofal, um objeto mágico capaz de conceder a imortalidade. A trama combina mistério, aventura e a descoberta do poder da amizade e coragem.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        © 2024 R.C.D.L - Todos os direitos reservados
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

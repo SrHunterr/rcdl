@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sobre.css">
+    <title>R.C.D.L</title>
+</head>
+<body>
+
+    <header>
+        <img src="/img/logo emyli.png" alt="Logo" id="logo">
+        <h1 id="titulo">R.C.D.L</h1>
+        <button id="openMenu" onclick="toggleMenu()">&#9776;</button>
+    </header>
+
+    <nav id="menu">
+        <button id="closeMenu" onclick="toggleMenu()">X</button>
+        <a href="/layout.html"><strong>Início</strong></a>
+        <a href="/Paginas/sobre.html"><strong>Sobre</strong></a>
+        <a href="/Paginas/publicar.html"><strong>Publicar</strong></a>
+        <a href="/Paginas/conatos.html"><strong>Contatos</strong></a>
+    </nav>
+
+    <main>
+        <h2>Empresa: R.C.D.L (Roda Cultural de Livros)</h2>
+        <p>Em um mundo de tecnologias buscamos resgatar as boas sensações proporcionadas por um bom livro.</p>
+
+        <h3>Visão</h3>
+        <p>Fazer com que mais pessoas adquiram conhecimento através dos nossos livros. E também com que as pessoas percam o medo de expor a sua opinião.</p>
+
+        <h3>O que você ganha com a nossa empresa</h3>
+        <p>Imersão no conhecimento, crescimento pessoal, interação social, exploração cultural, acesso a recursos valiosos.</p>
+
+        <h2>Temos parceria com a empresa Chef Doidão</h2>
+    </main>
+
+    <footer>
+        © 2024 R.C.D.L - Todos os direitos reservados
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

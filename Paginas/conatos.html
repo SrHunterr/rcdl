@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Paginas/contatos.css">
+    <title>Layout</title>
+</head>
+<!--Todo mundo que ver esse codigo vai rebolar slow for the crias.  -->
+<body>
+    <header>
+        <img src="/img/logo emyli.png" alt="Logo" class="logo">
+        <h1>R.C.D.L</h1>
+        <button id="openMenu" onclick="toggleMenu()">&#9776;</button>
+    </header>
+
+    <nav id="menu">
+        <button id="closeMenu" onclick="toggleMenu()">X</button>
+        <a href="/layout.html"><strong>Inicio</strong></a>
+        <a href="/Paginas/sobre.html"><strong>Sobre</strong></a>
+        <a href="/Paginas/publicar.html"><strong>Publicar</strong></a>
+        <a href="/Paginas/conatos.html">Contatos</a>
+    </nav>
+
+    <main>
+        <div class="cards">
+            <a href="/livros/harry potter/harry.html">
+                <img src="/img/Foto da Emily pro prijeto.jpg" alt="Capa do livro" id="capaemyli">
+                <h3>Emyli (CEO)</h3>
+                <h4><a href="" target="_blank">Linkedin</a></h4>
+                
+            </a>
+        </div>
+        <div class="cards">
+            <a href="/livros/harry potter/harry.html"></a>
+                <img src="/img/Foto de ~ Yago S..jpg" alt="Capa do livro">
+                <h3>Ynara (Empregada)</h3>
+                <h4><a href="https://pt.wikipedia.org/wiki/Mark_Manson" target="_blank">Linkedin</a></h4>
+            </div>
+        </div>
+        
+        
+    </main>
+
+    <footer>
+        © 2024 R.C.D.L - Todos os direitos reservados
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
